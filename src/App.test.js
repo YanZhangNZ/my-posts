@@ -34,10 +34,10 @@ describe('App Component', () => {
         expect(component.length).toBe(1);
     });
 
-    // it('Should update state as expected', () => {
-    //     const classInstance = wrapper.instance();
-    //     classInstance.exampleMethod_updateState();
-    //     const newState = classInstance.state.hideBtn;
-    //     expect(newState).toBe(true);
-    // });
+    it('Should update state as expected', () => {
+        const classInstance = wrapper.instance();
+        classInstance.exampleMethod_updatesState();
+        const newState = classInstance.state.hideBtn;
+        expect(newState).toBe(true);
+    });
 })
