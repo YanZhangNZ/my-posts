@@ -39,6 +39,5 @@ describe('fetchPosts action',()=>{
             const newState = store.getState();
             expect(newState.posts).toBe(expectedState);
         })
-    });
-    
+    });    
 })
