@@ -40,4 +40,10 @@ describe('App Component', () => {
         const newState = classInstance.state.hideBtn;
         expect(newState).toBe(true);
     });
+
+    it('Should return value as expected', () => {
+        const classInstance = wrapper.instance();
+        const newValue = classInstance.exampleMethod_returnsAValue(6);
+        expect(newValue).toBe(7);
+    });
 })

@@ -30,6 +30,9 @@ class App extends Component {
     });
   }
 
+  exampleMethod_returnsAValue = (num) => {
+    return num + 1;
+  }
   render(){
     const { posts } = this.props;
     const { hideBtn } = this.state;
